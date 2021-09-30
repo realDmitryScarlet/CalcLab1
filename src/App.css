@@ -1,38 +1,84 @@
-.App {
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
   text-align: center;
+  font-size: 24px;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text_centered {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pd-top-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.digit {
+  display: inline-block;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+
+.label {
+  padding-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.area {  
+  margin: 15px auto 0;
+  max-width: 935px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.area_border {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 32px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input_bordered {
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+border-radius: 16px;
+padding: 10px;
+margin: 5px;
+}
+  
+.input_bordered:focus {
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.3) !important;
+box-sizing: border-box;
+border-radius: 16px;
 }
